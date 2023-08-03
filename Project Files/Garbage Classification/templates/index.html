@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+    <script src="https://kit.fontawesome.com/8b9cdc2059.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- <script defer src="../static/js/main.js"></script> -->
+    <title>Garbage Classification</title>
+</head>
+<body>
+    <header id="head" class="header">
+   <section  id="navbar">
+           <h1 class="nav-heading"><i class="fas fa-recycle m2"></i>Garbage Classification</h1>
+       <div class="nav--items">
+           <ul>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li><a href="prediction.html">Prediction</a></li>
+           </ul>
+       </div>
+   </section>
+   <section id="slider">
+    <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
+        <ol class="carousel-indicators ">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active "></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="font">Welcome to Garbage Classification</h2>
+                <p class="text-light">Reuse the past, Recycle the present, Save the future.</p>
+            </div>
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="../static/img/first.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../static/img/second.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../static/img/third.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../static/img/fourth.jpg" alt="fourth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../static/img/fifth.jpg" alt="fifth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+   </section>
+</header>
+<section id="about">
+    <div class="top">
+        <h3 class="title text-muted">
+            ABOUT PROJECT
+        </h3>
+        <div class="line"></div>
+    </div>
+<div class="body">
+<div class="left">
+    <h2>Problem:</h2>
+    <p>
+       The accumulation of solid waste in the urban area is becoming a great concern, and
+it would result in environmental pollution and may be hazardous to human health if
+itis not properly managed. It is important to have an advanced/intelligent waste
+management system to manage a variety of waste materials. One of the most
+important steps of waste management is the separation of the waste into the.
+different components and this process is normally done manually by hand-picking.
+To simplify the process, we propose an intelligent waste material classification
+system, which is developed by using the 50-layer residual net pre-train (ResNet-50)
+Convolutional Neural Network model which is a machine learning tool and serves as
+the extractor, and Support Vector Machine (SVM) which is used to classify the waste
+into different groups/types such as glass, metal, paper, and plastic etc. The proposed
+system is tested on the trash image dataset which was developed by Gary Thung and
+Mindy Yang, and is able to achieve an accuracy of 87% on the dataset. The separation
+process of the waste will be faster and intelligent using the proposed waste material
+classification system without or reducing human involvement.
+
+    </p>
+</div>
+<div class="right">
+    <h2>Solution:</h2>
+    <p>
+        The present way of separating waste/garbage is the hand-picking method, whereby
+someone is employed to separate out the different objects/materials. The person,
+who separate waste, is prone to diseases due to the harmful substances in the
+garbage. With this in mind, it motivated us to develop an automated system which is
+able to sort the waste. and this system can take short time to sort the waste, and it
+will be more accurate in sorting than the manual way. With the system in place, the
+beneficial separated waste can still be recycled and converted to energy and fuel for
+the growth of the economy. The system that is developed for the separation of the
+accumulated waste is based on the combination of Convolutional Neural Network.
+    </p>
+</div>
+</div>
+</section>
+<section id="services">
+<h3 class="title text-muted">WE CLASSIFY</h3>
+<div class="line"></div>
+<div class="testimonials">
+    <div class="card" style="width: 25rem;">
+        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\cardboard.jpg" class="card-img-top" alt="cardboard">
+        <div class="card-body">
+          <h5 class="card-title text-muted">CardBoard</h5>
+          <p class="card-text">Waste cardboard is a major source of pollution, but it can also be a valuable resource. Here are some of the things that can be done with waste cardboard:
+
+Recycled. Waste cardboard can be recycled into new paper products, such as paper towels, tissues, and cardboard boxes. Recycling cardboard helps to reduce the amount of waste that goes to landfills and incinerators.
+Composted. Waste cardboard can be composted, which means it can be broken down into organic matter that can be used to enrich soil. Composting helps to reduce the amount of waste that goes to landfills and incinerators, and it also helps to improve soil quality.
+Upcycled. Waste cardboard can be upcycled, which means it can be reused to create new products. There are many creative ways to upcycle waste cardboard, such as making storage boxes, art projects, and even furniture. Upcycling helps to reduce the amount of waste that goes to landfills and incinerators, and it also helps to reduce the need for new materials.</p>
+        </div>
+      </div>
+    <div class="card" style="width: 25rem;">
+        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\bottle.jpg" class="card-img-top" alt="bottle">
+        <div class="card-body">
+          <h5 class="card-title text-muted">Glass</h5>
+          <p class="card-text">Waste glass is a type of solid waste that is made up of glass that has been discarded.
+Glass is a 100% recyclable material, which means that it can be recycled indefinitely without losing its quality.
+When glass is recycled, it is melted down and used to make new glass products.
+Recycling glass helps to reduce the amount of waste that goes to landfills and incinerators.
+Recycling glass also helps to conserve natural resources, such as sand and limestone.</p>
+        </div>
+      </div>
+    <div class="card" style="width: 25rem;">
+        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\metal.jpg" class="card-img-top" alt="metal">
+        <div class="card-body text-muted">
+          <h5 class="card-title">Metal</h5>
+          <p class="card-text">Waste metal is a type of solid waste that is made up of metal that has been discarded. It is a valuable resource that can be recycled into new products.
+
+Metals are a versatile material that can be used to make a wide variety of products, including cars, appliances, and construction materials. They are also a valuable resource that can be recycled over and over again without losing their properties.
+
+Waste metal can be recycled into new products through a process called smelting. In smelting, the metal is melted down and then cast into new shapes. This process can be used to recycle a wide variety of metals, including steel, aluminum, copper, and zinc.</p>
+         
+        </div>
+      </div>
+    <div class="card" style="width: 25rem;">
+        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\page.jpg" class="card-img-top" alt="page">
+        <div class="card-body text-muted">
+          <h5 class="card-title">Paper</h5>
+          <p class="card-text">Waste paper is a type of solid waste that is made up of paper that has been discarded. It is the most common type of waste in the world, accounting for about 40% of municipal solid waste (MSW).
+
+Waste paper can be recycled into new paper products, such as paper towels, tissues, and cardboard boxes. Recycling waste paper helps to reduce the amount of waste that goes to landfills and incinerators. It also helps to conserve natural resources, such as trees and water.</p>
+        
+        </div>
+      </div>
+    <div class="card" style="width: 25rem;">
+        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\plastic.jpg" class="card-img-top" alt="plastic">
+        <div class="card-body text-muted">
+          <h5 class="card-title">Plastic</h5>
+          <p class="card-text">Waste plastic is a type of solid waste that is made up of plastic that has been discarded.
+Plastic is a non-renewable resource, which means that it cannot be replaced once it has been used.
+Plastic takes hundreds of years to decompose in landfills.
+Plastic pollution is a major environmental problem, as it can harm wildlife and pollute waterways.
+There are a number of ways to reduce waste plastic, such as using reusable bags, recycling plastic, and avoiding single-use plastics.</p>
+         
+        </div>
+      </div>
+    <div class="card" style="width: 25rem;">
+        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\trash.jpg" class="card-img-top" alt="trash">
+        <div class="card-body text-muted">
+          <h5 class="card-title">Trash</h5>
+          <p class="card-text">India is the world's second-largest producer of trash, generating about 2.56 million tons of trash every day.
+Only about 12% of India's trash is recycled, while the rest is either landfilled or burned.
+Landfills in India are often poorly managed, leading to pollution of groundwater and soil.
+Burning trash releases harmful pollutants into the air, contributing to climate change and respiratory problems.
+India's trash problem is a major environmental and public health challenge.</p>
+         
+        </div>
+      </div>
+</div>
+</section>
+
+<!-- Contact  -->
+<setion id="contact">
+    <h3 class=" text-muted title">CONTACT US</h3>
+    <div class="line"></div>
+    <div class="contact-container">
+    <div class="conatct-left">
+        <div class="items">
+            <i class="fas fa-map-pin fa-2x"></i>
+            <h3 class=" text-muted">
+                 Address
+            </h3>
+            <p>Plot No 132, 2nd Floor, Above DCB
+Bank, HMT Nagar, Nacharam Main
+Road, Hyderabad - 500076</p>
+        </div>
+        <div class="items">
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3 class="text-muted">
+                 Enquiries
+            </h3>
+            <p>info@thesmartbridge.com </p>
+        </div>
+        <div class="items">
+            <i class="fas fa-phone fa-2x"></i>
+            <h3 class=" text-muted">
+                 Call Us
+            </h3>
+            <p>+91403511 2535</p>
+        </div>
+        
+    </div>
+    <div class="contact-right">
+        <h3 class=" text-muted">ENROLL TO OUR SERVICES</h3>
+        <form>
+            <input type="text"  placeholder="Your Name" 
+               name="name">
+               <input type="email"  placeholder="Email Adress"
+               name="email">
+               <input type="text"  placeholder="Phone Number"
+               name="phone">
+            <button type="submit" class="btn-warning btn">Submit</button>
+        </form>
+    </div>
+</div> 
+</setion>
+<section id="footer">
+    <p>Copyright © 2023. All Rights Reserved </p>
+    <div class="social">
+      <a href="#" target="_blank"><i class="fab fa-2x fa-twitter-square"></i></a>
+       <a href="#" target="_blank">
+        <i class="fab fa-2x  fa-linkedin"></i></a>
+        <a href="#">
+            <i class="#"></i>
+        </a>
+    </div>
+</section>
+</body>
+</html>
