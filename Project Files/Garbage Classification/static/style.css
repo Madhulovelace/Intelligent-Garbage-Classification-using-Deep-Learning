@@ -220,3 +220,25 @@ text-transform: uppercase;
 .hide{
     visibility: hidden;
 }
+/* Responsive layout and prediction states */
+.output-container { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; padding: 1rem; }
+.output { width: auto; margin: 1rem; }
+.output img { max-width: 100%; object-fit: cover; }
+.hidden { display: none !important; }
+.hide { display: none; }
+#prediction .prediction-input { flex-wrap: wrap; gap: 1rem; padding: 1rem; }
+#prediction .prediction-input form { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+#services .testimonials .card { width: min(25rem, 100%) !important; }
+#services .testimonials .card img { width: 100%; height: 12rem; object-fit: cover; }
+@media (max-width: 900px) {
+  #services .testimonials { grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 1rem; }
+  .output-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  #head #navbar { height: auto; min-height: 100px; flex-direction: column; gap: .75rem; }
+  #navbar .nav--items ul { flex-wrap: wrap; justify-content: center; }
+  #about .body, #contact .contact-container { grid-template-columns: 1fr; }
+  #services .testimonials, .output-container { grid-template-columns: 1fr; }
+  #head #slider .carousel-item img { height: 40vh; object-fit: cover; }
+  #footer { height: auto; min-height: 80px; flex-wrap: wrap; gap: .5rem; padding: 1rem; }
+}
