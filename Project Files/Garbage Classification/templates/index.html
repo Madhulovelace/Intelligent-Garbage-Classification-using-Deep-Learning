@@ -14,7 +14,7 @@
 
     <script src="https://kit.fontawesome.com/8b9cdc2059.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <!-- <script defer src="../static/js/main.js"></script> -->
     <title>Garbage Classification</title>
 </head>
@@ -27,7 +27,7 @@
                <li><a href="#about">About</a></li>
                <li><a href="#services">Services</a></li>
                <li><a href="#contact">Contact</a></li>
-               <li><a href="prediction.html">Prediction</a></li>
+               <li><a href="{{ url_for('prediction') }}">Prediction</a></li>
            </ul>
        </div>
    </section>
@@ -46,19 +46,19 @@
                 <p class="text-light">Reuse the past, Recycle the present, Save the future.</p>
             </div>
             <div class="carousel-item active">
-                <img class="d-block w-100" src="../static/img/first.jpg" alt="First slide">
+                <img class="d-block w-100" src="{{ url_for('static', filename='img/first.jpg') }}" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../static/img/second.jpg" alt="Second slide">
+                <img class="d-block w-100" src="{{ url_for('static', filename='img/second.jpg') }}" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../static/img/third.jpg" alt="Third slide">
+                <img class="d-block w-100" src="{{ url_for('static', filename='img/third.jpg') }}" alt="Third slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../static/img/fourth.jpg" alt="fourth slide">
+                <img class="d-block w-100" src="{{ url_for('static', filename='img/fourth.jpg') }}" alt="fourth slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../static/img/fifth.jpg" alt="fifth slide">
+                <img class="d-block w-100" src="{{ url_for('static', filename='img/fifth.jpg') }}" alt="fifth slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -123,7 +123,7 @@ accumulated waste is based on the combination of Convolutional Neural Network.
 <div class="line"></div>
 <div class="testimonials">
     <div class="card" style="width: 25rem;">
-        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\cardboard.jpg" class="card-img-top" alt="cardboard">
+        <img src="{{ url_for('static', filename='img/tesimonials/cardboard.jpg') }}" class="card-img-top" alt="cardboard">
         <div class="card-body">
           <h5 class="card-title text-muted">CardBoard</h5>
           <p class="card-text">Waste cardboard is a major source of pollution, but it can also be a valuable resource. Here are some of the things that can be done with waste cardboard:
@@ -134,7 +134,7 @@ Upcycled. Waste cardboard can be upcycled, which means it can be reused to creat
         </div>
       </div>
     <div class="card" style="width: 25rem;">
-        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\bottle.jpg" class="card-img-top" alt="bottle">
+        <img src="{{ url_for('static', filename='img/tesimonials/bottle.jpg') }}" class="card-img-top" alt="bottle">
         <div class="card-body">
           <h5 class="card-title text-muted">Glass</h5>
           <p class="card-text">Waste glass is a type of solid waste that is made up of glass that has been discarded.
@@ -145,7 +145,7 @@ Recycling glass also helps to conserve natural resources, such as sand and limes
         </div>
       </div>
     <div class="card" style="width: 25rem;">
-        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\metal.jpg" class="card-img-top" alt="metal">
+        <img src="{{ url_for('static', filename='img/tesimonials/metal.jpg') }}" class="card-img-top" alt="metal">
         <div class="card-body text-muted">
           <h5 class="card-title">Metal</h5>
           <p class="card-text">Waste metal is a type of solid waste that is made up of metal that has been discarded. It is a valuable resource that can be recycled into new products.
@@ -157,7 +157,7 @@ Waste metal can be recycled into new products through a process called smelting.
         </div>
       </div>
     <div class="card" style="width: 25rem;">
-        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\page.jpg" class="card-img-top" alt="page">
+        <img src="{{ url_for('static', filename='img/tesimonials/page.jpg') }}" class="card-img-top" alt="page">
         <div class="card-body text-muted">
           <h5 class="card-title">Paper</h5>
           <p class="card-text">Waste paper is a type of solid waste that is made up of paper that has been discarded. It is the most common type of waste in the world, accounting for about 40% of municipal solid waste (MSW).
@@ -167,7 +167,7 @@ Waste paper can be recycled into new paper products, such as paper towels, tissu
         </div>
       </div>
     <div class="card" style="width: 25rem;">
-        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\plastic.jpg" class="card-img-top" alt="plastic">
+        <img src="{{ url_for('static', filename='img/tesimonials/plastic.jpg') }}" class="card-img-top" alt="plastic">
         <div class="card-body text-muted">
           <h5 class="card-title">Plastic</h5>
           <p class="card-text">Waste plastic is a type of solid waste that is made up of plastic that has been discarded.
@@ -179,7 +179,7 @@ There are a number of ways to reduce waste plastic, such as using reusable bags,
         </div>
       </div>
     <div class="card" style="width: 25rem;">
-        <img src="C:\Users\Mithi\OneDrive\Desktop\Mithil's Version\Garbage classification\static\img\tesimonials\trash.jpg" class="card-img-top" alt="trash">
+        <img src="{{ url_for('static', filename='img/tesimonials/trash.jpg') }}" class="card-img-top" alt="trash">
         <div class="card-body text-muted">
           <h5 class="card-title">Trash</h5>
           <p class="card-text">India is the world's second-largest producer of trash, generating about 2.56 million tons of trash every day.
@@ -194,7 +194,7 @@ India's trash problem is a major environmental and public health challenge.</p>
 </section>
 
 <!-- Contact  -->
-<setion id="contact">
+<section id="contact">
     <h3 class=" text-muted title">CONTACT US</h3>
     <div class="line"></div>
     <div class="contact-container">
@@ -237,7 +237,7 @@ Road, Hyderabad - 500076</p>
         </form>
     </div>
 </div> 
-</setion>
+</section>
 <section id="footer">
     <p>Copyright © 2023. All Rights Reserved </p>
     <div class="social">
